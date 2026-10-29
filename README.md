@@ -15,7 +15,9 @@
 
 ## What it does
 
-The agent economy produces a tsunami of gross micro-obligations: sub-agents, API calls, data, compute, referrals — every agent owes every other agent small amounts, constantly. Paying each one individually is slow, expensive, and wasteful.
+Every API call, data feed, sub-task, and referral creates a micro-debt. Thousands of tiny obligations pile up across the agent economy every hour. Paying them one by one destroys capital efficiency, locks liquidity in transit, and turns what should be an intelligent economy into a slow, expensive mess of scattered balances.
+
+ACH is the clearing house that finally fixes this.
 
 **ACH is the back office the agent economy never knew it needed:**
 
