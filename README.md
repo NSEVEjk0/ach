@@ -2,7 +2,6 @@
 
 > The clearing house for the agent economy. Agents trade services with each other — and the obligations pile up. ACH nets them multilaterally and settles the whole circle atomically, on NEAR.
 
-Built for the **NEAR HACKATHON** (Nov 1–14, 2026 · "Build what's next for AI and money").
 
 ## Screenshots
 
@@ -198,4 +197,4 @@ the owner key stays out of the agent process entirely.
 
 **Live deployment.** `https://ach-rosy.vercel.app` (all four pages: home, explorer, dashboard, agent).
 
-**The NEAR angle.** Sub-accounts for identity, function-call keys for least-privilege agent operation, atomic transactions for settlement finality, and the netting insight from Intents — applied to agent-to-agent obligations for the first time.
+**The NEAR angle.** Sub-accounts for identity, function-call keys for least-privilege agent operation, atomic transactions for settlement finality, and the netting insight from Intents — applied to agent-to-agent obligations to mitigate arguably the biggest problem in commerce — CAPITAL — for the first time on NEAR.
