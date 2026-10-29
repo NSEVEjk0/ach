@@ -1,0 +1,8 @@
+.env
+.env*
+scripts/participants.json
+scripts/fund-from-helper.mjs
+*.log
+node_modules/
+.next/
+.vercel
