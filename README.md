@@ -26,40 +26,17 @@ ACH is the clearing house that finally fixes this.
 3. **Atomic clearing** — the whole circle settles in one atomic `clear()` call: either every transfer happens or none do. No partial settlement, no stranded IOUs.
 4. **Autonomous operation** — the ACH agent watches the contract, detects worthwhile compression opportunities (≥10% by default), and settles them automatically. Humans can audit every decision in its reasoning log.
 
-## Why netting? The 2008 and 2020 lessons
+## Why Netting Matters
 
-Multilateral compression isn't a fintech gimmick — it's the mechanism that kept the global
-financial system standing through its two worst crises in a generation.
+In both 2008 and 2020, large webs of gross bilateral obligations nearly froze the financial system. When Lehman failed, institutions that were solvent on a net basis still faced cascading margin calls because their gross exposures were locked. In March 2020, the dash for cash showed the same pattern: systems that netted aggressively (CLS, major CCPs) needed far less liquidity and stayed stable, while bilateral markets seized. CLS cuts daily FX funding needs by ~90% by settling only net balances — and survived both crises without a single settlement failure.
 
-**2008 — the bilateral web froze.** Before the crisis, banks held enormous *gross* positions
-with each other over-the-counter, with no central record and no netting. When Lehman Brothers
-failed, every counterparty had a claim against it — and every claim froze. The result was a
-domino effect: institutions that were solvent on a net basis were forced into fire sales and
-margin calls because their *gross* exposures were locked up. The regulatory response was
-mandatory **central clearing**: derivatives moved to central counterparties (CCPs like LCH and
-CME), which net all positions against a single central entity. Gross exposure collapsed, and a
-failure could no longer cascade through a web of bilateral claims.
+The agent economy will face the same constraints.
 
-**2020 — the dash for cash exposed liquidity needs.** In March 2020, COVID-19 triggered
-extreme volatility and a scramble for cash. Margin calls spiked and funding markets strained.
-The clearing infrastructure held — but it proved that *netting is a liquidity tool*: the less
-gross volume that has to move, the less funding any participant needs to hold. Systems that
-netted aggressively (CLS for FX, CCPs for derivatives) required a fraction of the liquidity of
-gross settlement, and that is exactly why they stayed calm while bilateral markets seized up.
+As agents scale, they will constantly bill one another for data, compute, API calls, and sub-tasks. Each interaction creates a micro-obligation. Paid gross, these obligations fragment capital, multiply fees, lock liquidity in transit, and spread counterparty risk across the network. The denser the agent economy becomes, the more severe these pressures grow.
 
-**How CLS handled it.** CLS (Continuous Linked Settlement) was created after the 1974
-Herstatt collapse to eliminate settlement risk in FX — the risk that one leg of a trade pays
-and the other never arrives. CLS nets every bank's FX obligations against every other bank's,
-then settles only the *net* balances, payment-versus-payment, in one synchronized window.
-That single design cuts daily FX funding needs by **90%+**: banks fund their net position, not
-their gross flow. CLS survived 2008 and 2020 without a single settlement failure — because
-there was almost nothing left to fail.
+ACH applies the same multilateral netting that protected finance. Agents register obligations on-chain; ACH compresses the entire web and settles only the net balances in one atomic transaction on NEAR. Capital stays productive, risk is reduced, and settlement is final.
 
-**ACH applies the same logic to agents.** Agents owe each other small amounts constantly —
-data, compute, API calls, referrals. Paying gross fragments their capital and leaves risk at
-every hop. ACH nets the whole web multilaterally and settles only the net, atomically, on
-NEAR. The infrastructure that saved banking in 2008 and 2020 — multilateral compression — is
-now the back office of the agent economy.
+NEAR's primitives make this practical: sub-accounts for agent identity, function-call keys for least-privilege operation, atomic transactions for guaranteed settlement, and meta-transactions for smooth agent execution. The result is a native clearing layer that positions NEAR as the settlement fabric for agent-to-agent commerce.
 
 ## Why NEAR
 
