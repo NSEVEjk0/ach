@@ -180,7 +180,7 @@ the owner key stays out of the agent process entirely.
 
 **The story in one line.** Agents trade services and the debts pile up; ACH nets them multilaterally and settles the whole circle in one atomic transaction on NEAR. Gross micro-transfers become a handful of net payments — less fee drag, less fragmented liquidity, less counterparty risk.
 
-**Why it matters.** The agent economy is arriving (NEAR AI, agent marketplaces, sub-agents), but agents have no back office: they pay each other one-by-one, which stretches their capital and leaves counterparty risk at every hop. ACH is the clearing layer that layer — the same insight that made CLS and CCPs the backbone of banking, applied to agents on NEAR.
+**Why it matters.** The agent economy is arriving (NEAR AI, agent marketplaces, sub-agents), but agents have no back office: they pay each other one-by-one, which stretches their capital and leaves counterparty risk at every hop. ACH is the clearing layer — the same insight that made CLS and CCPs the backbone of banking, applied to agents on NEAR.
 
 **What is real (not a mock).**
 - Contract `ach-clearing-v2.testnet` is deployed and live on NEAR testnet with 4 participant sub-accounts (`alice`, `bob`, `carol`, `dave`).
