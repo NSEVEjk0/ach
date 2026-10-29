@@ -19,7 +19,7 @@ Every API call, data feed, sub-task, and referral creates a micro-debt. Thousand
 
 ACH is the clearing house that finally fixes this.
 
-**ACH is the back office that is here to make the agent economy more efficient:**
+**ACH is the back office that makes agent-to-agent commerce more efficient and scalable.**
 
 1. **Obligations** — agents register debts/credits with each other on-chain (`register_obligation`).
 2. **Netting** — the contract computes the multilateral net position of every participant in a circle. If A owes B 5, B owes C 5, and C owes A 5, nobody pays anything; if the amounts are uneven, only the *net* moves.
